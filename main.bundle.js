@@ -46,7 +46,7 @@ module.exports = "<ul class=\"heroes\">\n  <li *ngFor=\" let hero of heroes \" [
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeroesComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_hero_service__ = __webpack_require__("../../../../../src/app/services/hero.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -60,31 +60,31 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var AppComponent = (function () {
-    function AppComponent(heroService) {
+var HeroesComponent = (function () {
+    function HeroesComponent(heroService) {
         this.heroService = heroService;
         this.title = "Tour of Heroes";
     }
-    AppComponent.prototype.getHeroes = function () {
+    HeroesComponent.prototype.getHeroes = function () {
         var _this = this;
         this.heroService.getHeroes().then(function (heroes) { return (_this.heroes = heroes); });
     };
-    AppComponent.prototype.onSelect = function (hero) {
+    HeroesComponent.prototype.onSelect = function (hero) {
         this.selectedHero = hero;
     };
-    AppComponent.prototype.ngOnInit = function () {
+    HeroesComponent.prototype.ngOnInit = function () {
         this.getHeroes();
     };
-    return AppComponent;
+    return HeroesComponent;
 }());
-AppComponent = __decorate([
+HeroesComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: "app-root",
         template: __webpack_require__("../../../../../src/app/app.component.html"),
         styles: [__webpack_require__("../../../../../src/app/app.component.css")],
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_hero_service__["a" /* HeroService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_hero_service__["a" /* HeroService */]) === "function" && _a || Object])
-], AppComponent);
+], HeroesComponent);
 
 var _a;
 //# sourceMappingURL=app.component.js.map
@@ -121,10 +121,10 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["L" /* NgModule */])({
-        declarations: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_5__components_hero_detail_hero_detail_component__["a" /* HeroDetailComponent */]],
+        declarations: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* HeroesComponent */], __WEBPACK_IMPORTED_MODULE_5__components_hero_detail_hero_detail_component__["a" /* HeroDetailComponent */]],
         imports: [__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */]],
         providers: [__WEBPACK_IMPORTED_MODULE_3__services_hero_service__["a" /* HeroService */]],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* HeroesComponent */]],
     })
 ], AppModule);
 

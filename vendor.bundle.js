@@ -49771,7 +49771,7 @@ var NgModuleFactory_ = (function (_super) {
  *   selector: 'app-component',
  *   templateUrl: 'app.component.html',
  * })
- * class AppComponent {
+ * class HeroesComponent {
  *   \@HostBinding('\@.disabled')
  *   public animationsDisabled = true;
  * }
