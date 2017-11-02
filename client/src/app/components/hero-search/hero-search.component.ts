@@ -4,8 +4,6 @@ import { Router } from "@angular/router";
 import { Observable } from "rxjs/Observable";
 import { Subject } from "rxjs/Subject";
 
-import "rxjs/add/operator/switchMap";
-
 // Observable class extensions
 import "rxjs/add/observable/of";
 
@@ -13,6 +11,7 @@ import "rxjs/add/observable/of";
 import "rxjs/add/operator/catch";
 import "rxjs/add/operator/debounceTime";
 import "rxjs/add/operator/distinctUntilChanged";
+import "rxjs/add/operator/switchMap";
 
 import { HeroSearchService } from "../../services/hero-search.service";
 import { Hero } from "../../classes/hero";
