@@ -19,6 +19,7 @@ import { AppComponent } from "./app.component";
 import { HeroesComponent } from "./components/heroes/heroes.component";
 import { HeroDetailComponent } from "./components/hero-detail/hero-detail.component";
 import { DashboardComponent } from "./components/dashboard/dashboard.component";
+import { HeroSearchComponent } from './components/hero-search/hero-search.component';
 
 @NgModule({
   imports: [
@@ -35,6 +36,7 @@ import { DashboardComponent } from "./components/dashboard/dashboard.component";
     HeroDetailComponent,
     AppComponent,
     DashboardComponent,
+    HeroSearchComponent,
   ],
   providers: [HeroService],
   bootstrap: [AppComponent],
